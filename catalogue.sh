@@ -49,9 +49,7 @@ then
     VALIDATE $? "roboshop user creation"
 else
     echo -e "roboshop user already exist $Y SKIPPING $N"
-fi    
-
-VALIDATE $? "creating roboshop user"
+fi
 
 mkdir -p /app
 
