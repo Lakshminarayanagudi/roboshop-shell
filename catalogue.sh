@@ -55,22 +55,22 @@ mkdir -p /app
 
 VALIDATE $? "creating app directory"
 
-curl -o /tmp/catalogue.zip https://roboshop-builds.s3.amazonaws.com/catalogue.zip &>> $LOGFILE
+curl -o /tmp/catalogue.zip https://roboshop-builds.s3.amazonaws.com/catalogue.zip  &>> $LOGFILE
 
-VALIDATE $? "downloading catalogue application"
+VALIDATE $? "Downloading catalogue application"
  
 cd /app
 
-unzip -o /tmp/catalogue.zip &>> $LOGFILE
+unzip -o /tmp/catalogue.zip  &>> $LOGFILE
 
 VALIDATE $? "unzipping catalogue"
 
-npm install &>> $LOGFILE
+npm install  &>> $LOGFILE
 
 VALIDATE $? "Installing dependencies"
 
 # use abolute, bacause catalogue.service exists there
-cp /home/centos/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
+cp /home/centos/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service  &>> $LOGFILE
 
 VALIDATE $? "Copying catalogue service file"
 
