@@ -98,4 +98,3 @@ mongo --host $MONGDB_HOST </app/schema/catalogue.js &>> $LOGFILE
 
 VALIDATE $? "Loading cagalouge date into MongoDB"
 
-
