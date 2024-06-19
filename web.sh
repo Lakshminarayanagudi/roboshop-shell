@@ -66,14 +66,3 @@ systemctl restart nginx &>> $LOGFILE
 
 VALIDATE $? "Restart nginx"
 
-
-
-
-
-
-
-
-
-
-
-
