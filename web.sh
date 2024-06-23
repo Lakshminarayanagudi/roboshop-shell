@@ -48,7 +48,7 @@ VALIDATE $? "removed default webside"
 
 curl -o /tmp/web.zip https://roboshop-builds.s3.amazonaws.com/web.zip &>> $LOGFILE
 
-VALIDATE $? Downloaded web application"
+VALIDATE $? "Downloaded web application"
 
 cd /usr/share/nginx/html &>> $LOGFILE
 
