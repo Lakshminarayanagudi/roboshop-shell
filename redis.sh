@@ -60,4 +60,3 @@ VALIDATE $? "Started redis"
 
 
 
-

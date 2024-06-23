@@ -65,3 +65,5 @@ VALIDATE $? "copied roboshop reverse proxy config"
 systemctl restart nginx &>> $LOGFILE
 
 VALIDATE $? "Restarted nginx"
+
+

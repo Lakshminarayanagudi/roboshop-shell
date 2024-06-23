@@ -98,4 +98,3 @@ mongo --host $MONGDB_HOST </app/schema/user.js &>> $LOGFILE
 VALIDATE $? "Loading user date into MongoDB"
 
 
-
