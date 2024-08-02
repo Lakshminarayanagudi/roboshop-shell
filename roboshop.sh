@@ -14,6 +14,6 @@ do
         INSTANCE_TYPE="t2.micro"
     fi
 
-aws ec2 run-instances --image-id ami-0b4f379183e5706b9 --instance-type $INSTANCCE_TYPE --security-group-ids sg-0d75384e0bdfd9e73
+aws ec2 run-instances --image-id ami-0b4f379183e5706b9 --instance-type $INSTANCCE_TYPE --security-group-ids sg-0d75384e0bdfd9e73 --tag-specifications "ResourceType=instance,Tags=[{Key=Name, Value=$i}]"
 
 done
